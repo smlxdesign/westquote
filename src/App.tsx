@@ -2,6 +2,8 @@ import { Suspense } from 'react';
 import Loading from './loading';
 import * as z from 'zod';
 
+import QuoteComponent from './components/Quote';
+
 import kanyeImage from './assets/kanye-image.webp';
 
 const Quote = z.object({
@@ -27,19 +29,13 @@ export default function App() {
 		<>
 			<div className="flex flex-col justify-center items-center min-h-screen">
 				<Suspense fallback={<Loading />}>
-					<div className="flex flex-col gap-6 text-zinc-800 max-w-sm rounded-lg p-6 bg-zinc-50 w-fit">
-						<blockquote className="italic">
-							“{quote.then((quote) => quote.quote)}”
-						</blockquote>
-						<div className="flex gap-2 items-center w-fit">
-							<img
-								src={kanyeImage}
-								className="size-5 object-cover rounded-full"
-								alt=""
-							/>
-							<span>Kanye West</span>
-						</div>
-					</div>
+					<QuoteComponent
+						quote={quote.then((quote) => quote.quote)}
+						author={{
+							name: 'Kanye West',
+							image: kanyeImage,
+						}}
+					/>
 				</Suspense>
 			</div>
 		</>
