@@ -2,8 +2,6 @@ import { Suspense } from 'react';
 import Loading from './loading';
 import * as z from 'zod';
 
-import kanyeImage from './assets/kanye-image.jpg';
-
 const Quote = z.object({
 	quote: z.string(),
 });
@@ -33,7 +31,7 @@ export default function App() {
 						</blockquote>
 						<div className="flex gap-2 items-center w-fit">
 							<img
-								src={kanyeImage}
+								src="/kanye-image.webp"
 								className="size-5 object-cover rounded-full"
 								alt=""
 							/>
