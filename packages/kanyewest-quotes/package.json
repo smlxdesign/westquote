@@ -1,11 +1,12 @@
 {
   "name": "kanyewest-quotes",
-  "module": "index.ts",
+  "module": "index.js",
   "devDependencies": {
     "@types/bun": "latest"
   },
   "peerDependencies": {
     "typescript": "^5"
   },
-  "type": "module"
+  "type": "module",
+  "types": "index.d.ts"
 }

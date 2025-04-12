@@ -1,0 +1,13 @@
+{
+  "name": "server",
+  "scripts": {
+    "dev": "bun run --hot src/index.ts"
+  },
+  "dependencies": {
+    "hono": "^4.7.6",
+    "kanyewest-quotes": "file:../../packages/kanyewest-quotes"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  }
+}
