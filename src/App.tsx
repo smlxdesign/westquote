@@ -27,7 +27,7 @@ const quote = loadQuote();
 export default function App() {
 	return (
 		<>
-			<div className="flex flex-col justify-center items-center min-h-screen">
+			<div className="flex flex-col justify-center items-center min-h-screen p-8">
 				<Suspense fallback={<Loading />}>
 					<QuoteComponent
 						quote={quote.then((quote) => quote.quote)}
@@ -35,6 +35,7 @@ export default function App() {
 							name: 'Kanye West',
 							image: kanyeImage,
 						}}
+						className="max-w-sm"
 					/>
 				</Suspense>
 			</div>
