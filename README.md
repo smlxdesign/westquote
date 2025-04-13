@@ -1,5 +1,9 @@
 # West Quote – Monorepo
 
+## Todo
+
+- [ ] React Native/Expo app
+
 ## Project Structure
 
 ```txt
