@@ -5,4 +5,6 @@ const quote = mock(() => loadQuote());
 
 test('loadQuote', async () => {
 	expect(await quote()).toBeString();
+	expect(await quote()).not.toBeEmpty();
+	expect(await quote()).not.fail();
 });
