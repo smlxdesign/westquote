@@ -10,7 +10,7 @@ export default function App() {
 			<div className="flex flex-col justify-center items-center min-h-dvh p-8">
 				<Suspense fallback={<Loading />}>
 					<Quote
-						quote={quote.then((quote) => quote.quote)}
+						quote={quote.then((quote) => quote)}
 						author={{
 							name: 'Kanye West',
 							image: kanyeImage,
