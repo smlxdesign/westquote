@@ -3,6 +3,7 @@ import Loading from './loading';
 import Quote from './components/Quote';
 import { quote } from './data/quote';
 import kanyeImage from './assets/kanye-image.webp';
+import Footer from './components/Footer';
 
 export default function App() {
 	return (
@@ -19,18 +20,7 @@ export default function App() {
 					/>
 				</Suspense>
 			</div>
-			<footer className="p-4">
-				<span>
-					Quote API is provided by{' '}
-					<a
-						className="underline cursor-pointer"
-						href="https://kanye.rest/"
-					>
-						Kanye.rest
-					</a>
-					. Everything else is coded by me, without AI.
-				</span>
-			</footer>
+			<Footer />
 		</>
 	);
 }
