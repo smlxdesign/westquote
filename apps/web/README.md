@@ -9,4 +9,4 @@ bun run dev # starts vite dev server
 
 ## License
 
-MIT
+GNU GPL v3
