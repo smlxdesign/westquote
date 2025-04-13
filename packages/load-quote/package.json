@@ -2,6 +2,10 @@
   "name": "load-quote",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "build": "bun build --target=bun --outdir=dist --minify .",
+    "test": "bun test"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
